@@ -2,14 +2,14 @@ import java.util.Random;
 
 public class ReturnRandomElement {
 
-    private Object[] values;
+    private char[] values;
     private int[] priorities;
 
     private int sum;
     private int[] weights;
 
 
-    public ReturnRandomElement(Object[] values, int[] priorities){
+    public ReturnRandomElement(char[] values, int[] priorities){
         this.values = values;
         this.priorities = priorities;
         sum = 0;
