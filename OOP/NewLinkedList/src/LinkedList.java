@@ -6,6 +6,19 @@ public class LinkedList {
     private int size;
     private Node first;
     private Node last;
+
+    public List<Node> getList() {
+        return list;
+    }
+
+    public Node getFirst() {
+        return first;
+    }
+
+    public Node getLast() {
+        return last;
+    }
+
     public LinkedList(){
         size = 0;
         list = new ArrayList<Node>();
@@ -30,17 +43,71 @@ public class LinkedList {
             Node last = node;
             list.add(node);
         }
+        size = list.size();
     }
 
     
     public Node get(int index){
         Node result;
         if (index > list.size()){
-            System.out.println("Слишком болшьшой индекс");
+            System.out.println("Слишком большой индекс");
             result = null;
         } else result = list.get(index);
         return result;
     }
+
+    public void removeIndex (int index){
+        Node removed = list.get(index);
+        Node prev = removed.getPrev();
+        Node next = removed.getNext();
+        if (prev == null){
+            first = next;
+        } else {
+            prev.setNext(next);
+        }
+        if (next == null){
+            last = prev;
+        } else {
+            next.setPrev(prev);
+        }
+        list.remove(index);
+        size = list.size();
+    }
+
+    public void addFirst (Object obj){
+        Node newFirst = new Node(obj, first, null);
+        first.setPrev(newFirst);
+        list.add(0, newFirst);
+        first = newFirst;
+        size = list.size();
+    }
+
+    public void addLast (Object obj){
+        Node newLast = new Node(obj, null, last);
+        last.setNext(newLast);
+        list.add(newLast);
+        last = newLast;
+        size = list.size();
+    }
+
+    public void removeLast(){
+        Node removed = last;
+        Node prev = last.getPrev();
+        prev.setNext(null);
+        last = prev;
+        list.remove(list.size()-1);
+        size = list.size();
+    }
+
+    public void removeFirst(){
+        Node removed = first;
+        Node next = first.getNext();
+        next.setPrev(null);
+        first = next;
+        list.remove(0);
+        size = list.size();
+    }
+
 
 
 
