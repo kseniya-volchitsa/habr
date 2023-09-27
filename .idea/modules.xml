@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/recursion/BinarySearch/BinarySearch.iml" filepath="$PROJECT_DIR$/recursion/BinarySearch/BinarySearch.iml" />
+      <module fileurl="file://$PROJECT_DIR$/basics/BubbleSort/BubbleSort.iml" filepath="$PROJECT_DIR$/basics/BubbleSort/BubbleSort.iml" />
+      <module fileurl="file://$PROJECT_DIR$/basics/DeleteFromArray/DeleteFromArray.iml" filepath="$PROJECT_DIR$/basics/DeleteFromArray/DeleteFromArray.iml" />
+      <module fileurl="file://$PROJECT_DIR$/basics/MaxMin/MaxMin.iml" filepath="$PROJECT_DIR$/basics/MaxMin/MaxMin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/basics/NaturalisNumbers/NaturalisNumbers.iml" filepath="$PROJECT_DIR$/basics/NaturalisNumbers/NaturalisNumbers.iml" />
+      <module fileurl="file://$PROJECT_DIR$/OOP/NewLinkedList/NewLinkedList.iml" filepath="$PROJECT_DIR$/OOP/NewLinkedList/NewLinkedList.iml" />
+      <module fileurl="file://$PROJECT_DIR$/OOP/PriorityRandom/PriorityRandom.iml" filepath="$PROJECT_DIR$/OOP/PriorityRandom/PriorityRandom.iml" />
+      <module fileurl="file://$PROJECT_DIR$/recursion/RootEquation/RootEquation.iml" filepath="$PROJECT_DIR$/recursion/RootEquation/RootEquation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/OOP/Vector/Vector.iml" filepath="$PROJECT_DIR$/OOP/Vector/Vector.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/habr.iml" filepath="$PROJECT_DIR$/.idea/habr.iml" />
+    </modules>
+  </component>
+</project>
